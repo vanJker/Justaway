@@ -18,6 +18,14 @@
 
 - 在 HTML 中，for 属性用于将 `<label>` 元素与表单控件（如输入框、单选按钮、复选框等）关联起来。它指定了与 `<label>` 元素相关联的表单控件的 id 属性值
 
+## CSS
+
+- 导入方式优先级: inline > internal > external
+
+- 行内块 (inline-block) 元素本质是行内元素，但是拥有块元素的调节长度宽度的特性，十分灵活
+
+- 相对定位会占据在文档流的原本位置，而绝对定位和固定定位则不占据文档流
+
 ## References
 
 - https://docs.geeksman.com/front-end/1.front-end-html.html

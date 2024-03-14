@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attributes</title>
+
+    <style>
+        .block {
+            background-color: aqua;
+            width: 150px;
+            height: 100px;
+        }
+
+        .inline {
+            background-color: brown;
+        }
+
+        .inline-block {
+            width: 200px;
+        }
+
+        .div-inline {
+            display: inline;
+            background-color: aquamarine;
+        }
+
+        .span-inline-block {
+            display: inline-block;
+            background-color: blueviolet;
+            width: 300px;
+        }
+
+        .span-block {
+            display: block;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 50px 'KaiTi';">This is a CSS compound property</h1>
+    <p style="line-height: 40px;">This is a long text. This is a long text. This is a long text.</p>
+
+    <div class="block">This is a block element.</div>
+    <span class="inline">This is an inline element.</span>
+    <img class="inline-block" src="../way.png" alt="">
+    <img class="inline-block" src="../way.png" alt="">
+    <img class="inline-block" src="../way.png" alt="">
+
+    <h2>Element display types can be converted interchangeably.</h2>
+    <div style="background-color: bisque;">This is a block element not converted into an inline element.</div>
+    <div class="div-inline">This is a block element converted into an inline element.</div>
+    <span class="span-inline-block">This is an inline element converted into an inline-block element.</span>
+    <span class="span-block">This is an inline element converted into a block element.</span>
+</body>
+</html>
