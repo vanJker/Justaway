@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <script>
+        let x;
+        let y = 5;
+        const PI = 3.14;
+        console.log(x, y, PI);
+        
+        let name = 'JavaScript';
+        console.log(name);
+
+        let empty_value = null;
+        console.log(empty_value);
+
+        let time = 22;
+        if (time < 12) {
+            alert("Good morning");
+        } else if (time < 18) {
+            alert("Good afternoon");
+        } else {
+            alert("Good evening");
+        }
+
+        console.log('for loop');
+        for (let i = 1; i < 10; i++) {
+            console.log(i);
+        }
+
+        console.log('wile loop');
+        let count = 10;
+        while (count > 0) {
+            console.log(count);
+            count--;
+        }
+
+        console.log("continue and break");
+        for (let i = 0; i < 7; i++) {
+            if (i == 2) {
+                continue;
+            }
+            if (i == 4) {
+                break;
+            }
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

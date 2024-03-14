@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <div id="box1">This is a ID selector.</div>
+    <div class="box2">This is a class selector.</div>
+    <div>Normal div tag</div>
+
+    <button>click button</button>
+
+    <script>
+        let element_id = document.getElementById('box1');
+        console.log(element_id);
+
+        let element_classes = document.getElementsByClassName('box2');
+        console.log(element_classes);
+        let element_class = element_classes[0];
+        console.log(element_class);
+
+        let element_tags = document.getElementsByTagName('div');
+        console.log(element_tags);
+        let element_tag = element_tags[2];
+        console.log(element_tag);
+
+        element_id.innerHTML = '<a href="a">link</a>';
+        element_class.innerText = '<a href="a">link</a>';
+        element_tag.style.color = 'red';
+        element_tag.style.fontSize = '20px';
+
+        let button_elements = document.getElementsByTagName('button');
+        console.log(button_elements);
+        let button_element = button_elements[0];
+        console.log(button_element);
+
+        // button_element.onclick = function () {
+        //     alert('DOM on click');
+        // }
+
+        button_element.addEventListener('click', click_event);
+        function click_event() {
+            alert('DOM addEventListener on click');
+        }
+    </script>
+</body>
+</html>
