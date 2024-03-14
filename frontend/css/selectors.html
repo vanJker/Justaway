@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS 选择器</title>
+    <style>
+        /* 元素选择器 */
+        h2 {
+            color: aqua;
+        }
+
+        /* 类选择器 */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID选择器 */
+        #header {
+            font-size: 35px;
+        }
+
+
+        /* 子元素选择器 */
+        .box > .element {
+            color: yellowgreen;
+        }
+
+        /* 后代选择器 */
+        div .element {
+            font-size: x-large;
+            color: brown;
+        }
+
+        /* 相邻兄弟选择器 */
+        h3 + p {
+            color: red;
+        }
+
+        /* 通用兄弟选择器 */
+        h4 ~ p {
+            background-color: #1b91ff;
+        }
+
+        /* 伪类选择器 */
+        .hover:hover {
+            background-color: blueviolet;
+        }
+
+        /* 通用选择器 */
+        * {
+            font-family: 'KaiTi';
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<h1>不同类型的CSS选择器示例</h1>
+<h2>这是一个元素选择器示例</h2>
+<h3 class="highlight">这是一个类选择器示例</h3>
+<h4 id="header">这是一个ID选择器示例</h4>
+<div class="box">
+    <p class="element">这是一个子元素选择器示例</p>
+    <div>
+        <p class="element">这是一个后代选择器示例</p>
+    </div>
+</div>
+<p>选中标签之前的 p 标签</p>
+<h3>这是相邻兄弟选择器示例</h3>
+<p>相邻兄弟元素示例</p>
+<h4>这是通用兄弟元素选择器示例</h4>
+<p>通用兄弟元素示例</p>
+<h3 class="hover">这是一个 hover 伪类选择器示例</h3>
+</body>
+
+</html>
